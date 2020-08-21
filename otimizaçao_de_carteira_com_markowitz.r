@@ -20,13 +20,13 @@ b3_ret <- c(-0.0317, -0.0140, -0.0292, 0.0229, 0.0657, 0.0611, 0.0571, 0.0480, 0
 
 # Criando a matriz de retornos
 
-retornos <- cbind(itub_ret, abev_ret, natu_ret, petr_ret)
+retornos <- cbind(itub_ret, abev_ret, vale_ret, petr_ret, b3_ret)
 
 retornos
 
 # Construindo a matriz de retorno medio
 
-retorno_medio <- rbind(mean(retornos[,1]), mean(retornos[,2]), mean(retornos[,3]), mean(retornos[,4]))
+retorno_medio <- rbind(mean(retornos[,1]), mean(retornos[,2]), mean(retornos[,3]), mean(retornos[,4]), mean(retornos[,5]) )
 
 rownames(retorno_medio) <- ativos
 
